@@ -27,7 +27,7 @@ function Banner(){
         <>
             <Carousel className="slider">
                 { banner.map( data => 
-                    <div className="slider-inner">
+                    <div className="slider-inner" key={data.id}>
                         <Image src={`https://admin.topazstone.ca${data.image[0].formats.large.url}`}  placeholder="blur" blurDataURL={`https://admin.topazstone.ca${data.image[0].formats.thumbnail.url}`} alt={data.Title} title={data.title} width={1921} height={862} />
                         <div className="dexription-parts">
                             <div className="container flex-class">

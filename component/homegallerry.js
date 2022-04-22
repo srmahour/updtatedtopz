@@ -57,7 +57,7 @@ function Homegallery() {
                                 <li key={item.id} onClick={() => {
                                     lightBoxHandler(true, index);
                                     }}>
-                                    <div cclassName="bg-box">
+                                    <div className="bg-box">
                                         <Image src={item.mediumImg} placeholder="blur" blurDataURL={item.smallImg} alt={item.title} title={item.title} width={500} height={203} />
                                         <h2>{item.title}</h2>
                                         <p>{item.description}</p>

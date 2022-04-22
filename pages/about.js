@@ -15,7 +15,7 @@ import Homeabout from "../component/homeaboutsection"
       <div className='home-page'>
         <Head>
         <title>{aboutMeta.Title}</title>
-        <meta name="description" content={aboutMeta.Description} />
+          <meta name="description" content={aboutMeta.Description} />
           <link rel="icon" href="/fev.ico" />
         </Head>
 

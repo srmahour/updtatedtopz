@@ -1,0 +1,261 @@
+.banner-section {
+    height: 862px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(000, 000, 000, 0.7);
+}
+.banner-section h3 {
+    font-family: Tiempos Headline;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 40px;
+    letter-spacing: 0px;
+    text-align: center;
+    color: #fff;
+    width: 858px;
+}
+.highlight-points {
+    padding: 75px 0px 0px;
+}
+.highlight-points .container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 1228px;
+}
+.highlight-points .logos {
+    width: 35%;
+    display: flex;
+    align-items: center;
+}
+.highlight-points .points {
+    width: 65%;
+}
+.highlight-points .points ul {
+    padding: 0px;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+.highlight-points .points ul li {
+    color: #494949;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    font-size: 21px;
+    font-weight: 500;
+    line-height: 25px;
+    letter-spacing: -0.01em;
+    text-align: left;
+}
+.highlight-points .product-gallerys {
+    margin-top: 25px;
+    width: 100%;
+    padding-bottom: 100px;
+}
+.highlight-points .product-gallerys .image img {
+    width: 100%;
+    height: 320px;
+}
+.highlight-points .logos img {
+    width: auto;
+}
+.highlight-points .points ul li img {
+    margin-right: 12px;
+    width: auto;
+    margin-top: -5px;
+}
+.banner-section h3 {
+    font-family: 'TiemposRegular';
+}
+.highlight-points .product-gallerys ul {
+    padding: 0px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    list-style: none;
+    grid-column-gap: 44px;
+    grid-row-gap: 44px;
+}
+.highlight-points .product-gallerys ul li {
+    position: relative;
+    cursor: pointer;
+}
+.highlight-points .product-gallerys ul li h4 {
+    font-size: 34px;
+    font-weight: 600;
+    line-height: 32px;
+    letter-spacing: 0em;
+    width: 100%;
+    text-align: center;
+    margin: 0px 0px 27px;
+}
+.highlight-points .product-gallerys ul li p {
+    font-family: 'TiemposRegular';
+    font-size: 17px;
+    font-weight: 400;
+    width: 373px;
+    line-height: 23px;
+    letter-spacing: 0px;
+    text-align: center;
+    margin: 0 auto;
+}
+.highlight-points .product-gallerys ul li .text {
+    color: #fff;
+    background: #0C4D72;
+    height: 320px;
+    display: flex;
+    padding: 30px 30px;
+    position: absolute;
+    flex-wrap: wrap;
+    align-items: center;
+    box-sizing: border-box;
+    width: 100%;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+}
+.highlight-points .product-gallerys ul li .text {
+    visibility: hidden;
+}
+.highlight-points .product-gallerys ul li:hover .text {
+    visibility: visible;
+}
+.highlight-points .product-gallerys ul li .text div {
+    width: 100%;
+}
+
+.highlight-points .product-gallerys ul li p {
+    width: 393px;
+    line-height: normal;
+}
+
+/*responsive start*/
+
+@media only screen and ( max-width:1199px ){
+    .highlight-points .product-gallerys {
+        margin-top: 25px;
+        width: 100%;
+        padding-bottom: 50px;
+    }
+    .highlight-points .product-gallerys ul {
+        grid-column-gap: 25px;
+        grid-row-gap: 25px;
+    }
+    .highlight-points .product-gallerys {
+        margin-top: 10px;
+    }
+}
+
+
+@media only screen and ( max-width:992px ){
+    .highlight-points .points ul li {
+        line-height: 36px;
+    }
+}
+
+@media only screen and ( max-width:901px ){
+    .banner-section h3 {
+        font-size: 25px;
+        line-height: 42px;
+    }
+    .highlight-points .points ul li {
+        line-height: 36px;
+        font-size: 22px;
+        margin-bottom: 16px;
+    }
+    .highlight-points {
+        padding: 48px 0px 0px;
+    }
+}
+
+@media only screen and ( max-width:801px ){
+    .banner-section h3 {
+        padding: 0px 20px;
+    }
+}
+
+
+@media only screen and ( max-width:701px ){
+    .highlight-points .logos {
+        padding-right: 29px;
+        width: 30%;
+    }
+    .highlight-points .points {
+        width: 70%;
+    }
+    .highlight-points .points ul li {
+        font-size: 19px;
+        margin-bottom: 5px;
+        align-items: baseline;
+    }
+    .highlight-points .points ul li img {
+        margin-right: 8px;
+        width: 23px;
+    }
+    .highlight-points .logos img{
+        width: 100%!important;
+    }
+    .highlight-points .points ul li img {
+        position: relative;
+        top: 5px;
+    }
+    .highlight-points {
+        padding: 25px 0px 0px;
+    }
+    .highlight-points .points ul {
+        margin-bottom: 0px;
+    }
+    .highlight-points .product-gallerys ul li .text, 
+    .highlight-points .product-gallerys .image img {
+        height: 219px!important;
+    }
+}
+
+
+@media only screen and ( max-width:601px ){
+    .banner-section h3 {
+        font-size: 20px;
+        line-height: 34px;
+    }
+    .highlight-points .logos {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 16px;
+    }
+    .highlight-points .logos img {
+        width: auto!important;
+    }
+    .highlight-points .points, .highlight-points .points ul li {
+        width: 100%;
+    }
+    .highlight-points .product-gallerys ul {
+        grid-template-columns: repeat(1, 1fr);
+        grid-column-gap: 19px;
+        grid-row-gap: 12px;
+    }
+    .highlight-points .product-gallerys {
+        padding-bottom: 18px;
+    }
+    .highlight-points .product-gallerys ul li h4 {
+        font-size: 35px;
+        margin-bottom: 18px;
+    }
+    .banner-section h3 {
+        font-size: 16px;
+        line-height: 27px;
+    }
+}
+
+@media only screen and ( max-width:481px ){
+    .highlight-points .product-gallerys ul li h4 {
+        font-size: 27px;
+    }
+}
+
+
+
+
+

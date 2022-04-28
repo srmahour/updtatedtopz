@@ -28,7 +28,7 @@ function Productimage() {
             })
     }, [])
     if (isLoading) {
-        return <p>Loading....</p>
+        return <p></p>
     }
     if (!data) {
         return <p>No List to show</p>
@@ -50,12 +50,12 @@ function Productimage() {
 
                     <div className="points">
                         <ul>
-                            <li><Image src="/tick-point.png" alt='tick' width={25} height={25} />  One-Stop Shop</li>
-                            <li><Image src="/tick-point.png" alt='tick' width={25} height={25} />  High Quality</li>
-                            <li><Image src="/tick-point.png" alt='tick' width={25} height={25} />  Uniqueness</li>
-                            <li><Image src="/tick-point.png" alt='tick' width={25} height={25} />  Simplicity</li>
-                            <li><Image src="/tick-point.png" alt='tick' width={25} height={25} />  Quick Lead Time</li>
-                            <li><Image src="/tick-point.png" alt='tick' width={25} height={25} />  Limited Lifetime Warranty</li>
+                            <li><Image src="/tick-point.png" alt='tick' width={25} height={25} />   <label>One-Stop Shop</label></li>
+                            <li><Image src="/tick-point.png" alt='tick' width={25} height={25} />  <label>High Quality</label></li>
+                            <li><Image src="/tick-point.png" alt='tick' width={25} height={25} />  <label>Uniqueness</label></li>
+                            <li><Image src="/tick-point.png" alt='tick' width={25} height={25} />  <label>Simplicity</label></li>
+                            <li><Image src="/tick-point.png" alt='tick' width={25} height={25} />  <label>Quick Lead Time</label></li>
+                            <li><Image src="/tick-point.png" alt='tick' width={25} height={25} />  <label>Limited Lifetime Warranty</label></li>
                         </ul>
                     </div>
 

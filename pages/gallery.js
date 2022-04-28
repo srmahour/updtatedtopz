@@ -21,9 +21,6 @@ import Gallery from "../component/gallery"
         <Header/>
             <Gallery/>
         <Footer />
-
-
-        
       </div>
     )
   }

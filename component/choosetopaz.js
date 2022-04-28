@@ -15,7 +15,7 @@ function Choosetopaz() {
             })
     }, [])
     if (isLoading) {
-        return <p>Loading....</p>
+        return <p></p>
     }
     if (!choose) {
         return <p>No List to show</p>

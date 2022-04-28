@@ -54,6 +54,11 @@ header.header-main .container {
   padding: 35px 16px;
   display: inline-block;
 }
+
+.highlight-points .points ul li label {
+  margin-left: 10px;
+  width: calc(100% - 35px);
+}
 .header-main .navigation-section ul li {
   list-style: none;
 }
@@ -524,7 +529,6 @@ html, body {
 }
 .home-section-five .slider-effect ul li h3 {
   color: #fff;
-  /* font-family: 'TiemposRegular'; */
   font-size: 20px;
   font-weight: 400;
   line-height: 24px;
@@ -532,9 +536,11 @@ html, body {
   text-align: left;
   margin: 0px 0px;
   position: absolute;
-  bottom: 31px;
-  left: 32px;
+  bottom: 30px;
+  left: 30px;
+  padding-right: 20px;
 }
+.home-section-four.bg-image:after {content: '';height: 100%;width: 100%;position: absolute;top: 0;left: 0;background: rgba(0, 0, 0, 0.35);z-index: 1;}
 .home-section-five .slider-effect ul li {
   position: relative;
 }
@@ -545,6 +551,11 @@ html, body {
 .home-section-six {
   background-color: rgba(000, 000, 000, 0.6);
   padding: 649px 0px 30px;
+  position: relative;
+}
+
+.home-section-six::after{
+  content: '';height: 100%;width: 100%;position: absolute;top: 0;left: 0;background: rgba(0, 0, 0, 0.55);z-index: 1;
 }
 .home-section-six .titles {
   width: 675px;
@@ -697,9 +708,7 @@ header.header-main button.toggle-btn-menu span {
   z-index: 99;
   position: relative;
 }
-.home-section-six {
-  position: relative;
-}
+
 .home-section-six img.usebgimages {
   position: absolute;
   top: 0px;
@@ -1528,6 +1537,20 @@ header.header-main button.toggle-btn-menu span {
   .footer-main .contact-numbers p {
     margin-right: 0px;
   }
+
+  .banner-section.product .container.banner h3 {
+    width: 100%;
+    margin: 0 auto;
+    background: rgb(2 173 238 / 70%);
+    padding: 20px;
+    text-shadow: 0 1px 1px #000;
+    font-size: 24px;
+    line-height: 30px;
+  }
+  .banner-section.product {
+    height: 400px;
+  }
+
 }
 
 
@@ -1639,6 +1662,27 @@ header.header-main button.toggle-btn-menu span {
   header.header-main .navigation-section {
     width: 250px;
   }
+
+  .home-section-five .slider-effect ul {
+    flex-wrap: wrap;
+  }
+.home-section-five .slider-effect ul li {
+  width: 100%;
+}
+.home-section-four p, .home-section-six .titles p {
+  font-size: 18px !important;
+  line-height: 26px;
+}
+
+.home-section-five .slider-effect ul li h3 {
+  background: #000;
+  padding: 10px 20px;
+  left: 10px;
+  display: inline-block !important;
+  width: auto;
+}
+
+
 }
 
 

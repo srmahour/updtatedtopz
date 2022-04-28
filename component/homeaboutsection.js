@@ -16,10 +16,10 @@ function Homeabout() {
             })
     }, [])
     if (isLoading) {
-        return <p>Loading....</p>
+        return <Image src={"/placeholder.jpg"}  alt="placeholder" title="placeholder" width={1921} height={862} />
     }
     if (!about) {
-        return <p>No List to show</p>
+        return <Image src={"/placeholder.jpg"}  alt="placeholder" title="placeholder" width={1921} height={862} />
     }
 
 
@@ -28,7 +28,7 @@ function Homeabout() {
             <div className="home-section-two">
                 <div className="container flex-class">
                     <div className="image-section">
-                        <Image src={`https://admin.topazstone.ca${about.About.image[0].formats.large.url}`}  placeholder="blur" blurDataURL={`https://admin.topazstone.ca${about.About.image[0].formats.thumbnail.url}`} alt="About Topaz" width={750} height={750} />
+                        <Image src={`https://admin.topazstone.ca${about.About.image[0].formats.medium.url}`} priority={true} alt="About Topaz" width={750} height={750} />
                     </div>
 
                     <div className="text-section">

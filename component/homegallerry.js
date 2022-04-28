@@ -27,7 +27,7 @@ function Homegallery() {
             })
     }, [])
     if (isLoading) {
-        return <p>Loading....</p>
+        return <p></p>
     }
     if (!toDos) {
         return <p>No List to show</p>

@@ -17,7 +17,7 @@ function Homaffordabless() {
             })
     }, [])
     if (isLoading) {
-        return <p>Loading....</p>
+        return <p></p>
     }
     if (!data) {
         return <p>No List to show</p>
@@ -26,7 +26,7 @@ function Homaffordabless() {
     return(
         <>
             <div className='home-section-six'>
-                <Image src={`https://admin.topazstone.ca${data.Image.url}`} placeholder="blur" blurDataURL={`https://admin.topazstone.ca${data.Image.formats.thumbnail.url}`} alt="Affordable" width={1921} className='usebgimages' height={900} />
+                <Image src={`https://admin.topazstone.ca${data.Image.formats.large.url}`} placeholder="blur" blurDataURL={"/placeholder.jpg"} alt="Affordable" width={1921} className='usebgimages' height={900} />
                 <div className='container'>
                     <div className='titles'>
                         <h3>{data.Title}</h3>

@@ -17,10 +17,10 @@ function Banner(){
             })
     }, [])
     if (isLoading) {
-        return <p>Loading....</p>
+        return <Image src={"/placeholder.jpg"}  alt="placeholder" title="placeholder" width={1921} height={862} />
     }
     if (!banner) {
-        return <p>No List to show</p>
+        return <Image src={"/placeholder.jpg"}  alt="placeholder" title="placeholder" width={1921} height={862} />
     }
 
     return (
@@ -28,7 +28,8 @@ function Banner(){
             <Carousel className="slider">
                 { banner.map( data => 
                     <div className="slider-inner" key={data.id}>
-                        <Image src={`https://admin.topazstone.ca${data.image[0].formats.large.url}`}  placeholder="blur" blurDataURL={`https://admin.topazstone.ca${data.image[0].formats.thumbnail.url}`} alt={data.Title} title={data.title} width={1921} height={862} />
+                        {/* <Image src={`https://admin.topazstone.ca${data.image[0].formats.large.url}`}  placeholder="blur" blurDataURL={`https://admin.topazstone.ca${data.image[0].formats.thumbnail.url}`} alt={data.Title} title={data.title} width={1921} height={862} /> */}
+                        <Image src={`https://admin.topazstone.ca${data.image[0].formats.large.url}`}  placeholder="blur" blurDataURL={"/placeholder.jpg"} alt={data.Title} title={data.title} width={1921} height={862} />
                         <div className="dexription-parts">
                             <div className="container flex-class">
                                 <h2>{data.Title}</h2>

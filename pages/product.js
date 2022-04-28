@@ -23,7 +23,7 @@ function Productpage({metaData}) {
           })
   }, [])
   if (isLoading) {
-      return <p>Loading....</p>
+      return <p></p>
   }
   if (!data) {
       return <p>No List to show</p>

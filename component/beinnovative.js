@@ -16,7 +16,7 @@ function Beinnovative() {
             })
     }, [])
     if (isLoading) {
-        return <p>Loading....</p>
+        return <p></p>
     }
     if (!data) {
         return <p>No List to show</p>

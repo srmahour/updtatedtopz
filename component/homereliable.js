@@ -17,7 +17,7 @@ function Homereliable() {
             })
     }, [])
     if (isLoading) {
-        return <p>Loading....</p>
+        return <p></p>
     }
     if (!data) {
         return <p>No List to show</p>
@@ -26,7 +26,7 @@ function Homereliable() {
     return(
         <>
             <div className="home-section-four bg-image">
-                <Image src={`https://admin.topazstone.ca${data.Image.url}`} placeholder="blur" blurDataURL={`https://admin.topazstone.ca${data.Image.formats.thumbnail.url}`} alt={data.Title} width={1921} className='use bg image' height={619} />
+                <Image src={`https://admin.topazstone.ca${data.Image.formats.large.url}`} placeholder="blur" blurDataURL={"/placeholder.jpg"} alt={data.Title} width={1921} className='use bg image' height={619} />
                 
                 <div className="container">
                     <h2>{data.Title}</h2>

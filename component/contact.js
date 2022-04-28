@@ -1,7 +1,28 @@
 import Image from 'next/image'
 import Link from 'next/link'
+import { useEffect, useState } from "react";
 
 function ContactUs(){
+
+    const [ data, setData ] = useState()
+    const [isLoading, setIsLoading] = useState(false)
+    useEffect(() => {
+        setIsLoading(true)
+        fetch('https://admin.topazstone.ca/contact-info')
+            .then(response => response.json())
+            .then(data => {
+                setData(data)
+                setIsLoading(false)
+            })
+    }, [])
+    
+    if (isLoading) {
+        return <p></p>
+    }
+    if (!data) {
+        return <p>No List to show</p>
+    }
+
     return (
         <>
             <div className="banner-section contact">
@@ -25,10 +46,7 @@ function ContactUs(){
                                     </div>
                                     <div>
                                         <h4>Address</h4>
-                                        <p>
-                                            <span> 177 Eagle Drive </span>
-                                            <span> Winnipeg, MB R2R 1V4</span>
-                                        </p>
+                                        <p>{data.Address}</p>
                                     </div>
                                 </li>
                                 <li>
@@ -50,7 +68,7 @@ function ContactUs(){
                                     </div>
                                     <div>
                                         <h4>Email</h4>
-                                        <p><a href="mailto:info@winnipegstonetops.ca">info@winnipegstonetops.ca</a></p>
+                                        <p><a href={`mailto:${data.Email}`}>{data.Email}</a></p>
                                     </div>
                                 </li>
                                 <li>
@@ -59,7 +77,7 @@ function ContactUs(){
                                     </div>
                                     <div>
                                         <h4>Phone</h4>
-                                        <p><a href="tel:(204)-694-8318">(204)-694-8318</a></p>
+                                        <p><a href={`tel:${data.Phone}`}>{data.Phone}</a></p>
                                     </div>
                                 </li>
                             </ul>
@@ -67,7 +85,7 @@ function ContactUs(){
                     </div>
 
                     <div className="right-side">
-                        <h3>Want to carry  <Link href="/"><a> <Image src="/logo.png" alt="Topaz" width={203} height={52} /></a></Link> ?</h3>
+                        <h3>Want to carry  <Link href="/"><a> <Image src={`https://admin.topazstone.ca${data.Logo.url}`} alt="Topaz" width={203} height={52} /></a></Link> ?</h3>
                         <form>
                             <p className="full-width"><input type="text" placeholder="Name*"/> </p>
                             <p className="half-width"><input type="email" placeholder="Email*"/> </p>

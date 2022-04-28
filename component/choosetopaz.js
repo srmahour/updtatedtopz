@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import Image from 'next/image'
 
 
 function Choosetopaz() {
@@ -15,10 +16,10 @@ function Choosetopaz() {
             })
     }, [])
     if (isLoading) {
-        return <p></p>
+        return <Image src={"/placeholder.jpg"}  alt="placeholder" title="placeholder" width={1921} height={862} />
     }
     if (!choose) {
-        return <p>No List to show</p>
+        return <Image src={"/placeholder.jpg"}  alt="placeholder" title="placeholder" width={1921} height={862} />
     }
 
     return (

@@ -32,7 +32,7 @@ function Productbanner({productData}) {
                 <ul>
 
                     { productData.Images.map( item => 
-                        <li className='product-grid' key={item.id}><Image src={`https://admin.topazstone.ca${item.url}`} placeholder="blur" blurDataURL={`https://admin.topazstone.ca${item.formats.thumbnail.url}`} alt="Topaz" title="Topaz" width={1921} height={775} /></li>    
+                        <li className='product-grid' key={item.id}><Image src={`https://admin.topazstone.ca${item.url}`} placeholder="blur" blurDataURL={"/placeholder.jpg"} alt="Topaz" title="Topaz" width={1921} height={775} /></li>    
                     )}
                     
                 </ul>

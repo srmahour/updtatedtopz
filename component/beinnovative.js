@@ -16,10 +16,10 @@ function Beinnovative() {
             })
     }, [])
     if (isLoading) {
-        return <p></p>
+        return <Image src={"/placeholder.jpg"}  alt="placeholder" title="placeholder" width={1921} height={862} />
     }
     if (!data) {
-        return <p>No List to show</p>
+        return <Image src={"/placeholder.jpg"}  alt="placeholder" title="placeholder" width={1921} height={862} />
     }
 
      return(
@@ -37,7 +37,7 @@ function Beinnovative() {
                                         { data.Images.map( item => 
                                         
                                         <li key={item.id}>
-                                            <Image src={`https://admin.topazstone.ca${item.formats.medium.url}`} placeholder="blur" blurDataURL={`https://admin.topazstone.ca${item.formats.thumbnail.url}`} alt={item.caption} width={440} height={605} />
+                                            <Image src={`https://admin.topazstone.ca${item.formats.medium.url}`} placeholder="blur" blurDataURL={"/placeholder.jpg"} alt={item.caption} width={440} height={605} />
                                             <h3>{item.caption}</h3>
                                         </li>
                                             

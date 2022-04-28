@@ -32,10 +32,10 @@ function Gallery(){
 
 
     if (isLoading) {
-        return <p></p>
+        return <Image src={"/placeholder.jpg"}  alt="placeholder" title="placeholder" width={1921} height={862} />
     }
     if (!data) {
-        return <p>No List to show</p>
+        return <Image src={"/placeholder.jpg"}  alt="placeholder" title="placeholder" width={1921} height={862} />
     }
 
     const imageData = data.map((item, index) =>  {

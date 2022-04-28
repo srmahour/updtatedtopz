@@ -27,10 +27,10 @@ function Homegallery() {
             })
     }, [])
     if (isLoading) {
-        return <p></p>
+        return <Image src={"/placeholder.jpg"}  alt="placeholder" title="placeholder" width={1921} height={862} />
     }
     if (!toDos) {
-        return <p>No List to show</p>
+        return <Image src={"/placeholder.jpg"}  alt="placeholder" title="placeholder" width={1921} height={862} />
     }
 
     const imageData = toDos.map((item, index) =>  {
